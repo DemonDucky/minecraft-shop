@@ -1,0 +1,299 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+}
+
+body {
+    background-color: #100F15;    
+}
+
+.header-container {
+    max-width: 1000px;
+    margin: 0 auto 16px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 500px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.border-bot {
+    border-bottom: 2px #fff solid;
+    border-color: #8960aa;
+    /* background-image: linear-gradient(to right, #8960aa, #50219e); */
+}
+
+.header-container ul {
+    text-align: center;
+}
+
+.header-container li:hover a {
+    color: white!important;
+}
+
+.header-container ul li{
+    color: rgb(160, 160, 160);
+    display: inline-block;
+}
+
+.header-container ul li h2 {
+    font-weight: 500;
+}
+
+.layout {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.margin-out {
+    margin: 0 32px;
+}
+
+.alt-acc {
+    background-color: #17171C;
+    border-radius: 10px;
+    padding: 0 24px;
+    color: white;
+    opacity: 0.9;
+}
+
+.alt-acc-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.alt-acc-items {
+    padding: 0 16px;
+    padding-bottom: 64px;
+    flex-basis: 33.33333%;
+}
+
+.alt-acc-items h2 {
+    padding: 32px 8px 0;
+}
+
+.purchase-button {
+    margin: 32px 16px;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 240px;
+    background-color: #f977ce;
+    background-image: linear-gradient(315deg, #f977ce 0%, #c373f2 74%);
+    color: white;
+    opacity: 0.9;
+}
+
+.purchase-button:hover {
+    animation: hover 0.4s;
+    cursor: pointer;
+    color: rgb(31, 31,31);
+}
+
+.per-acc-container {
+    background-color: rgba(41, 37, 59, 0.6);
+}
+
+.per-acc-container p {
+    padding: 0 16px;
+    line-height: 1.4;
+}
+
+.per-acc-container hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, #8960aa, #50219e);
+}
+
+.icon-trust {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(103, 36, 129);
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.icon-trust-container {
+    padding-top: 16px;
+}
+
+.footer {
+    width: 100%;
+    background-color: #17171C;
+    color: white;
+    border-top: rgb(70, 70, 70) 1px solid;
+    line-height: 1.4;
+    font-size: 14px;
+    padding: 0 32px;
+}
+
+.footer p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer-container {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px 0;
+}
+
+.footer-flex-item i {
+    padding-left: 12px;
+}
+
+.footer-flex-2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.purchase-label {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.js-open-label-purchase {
+    display: flex;
+}
+
+.purchase-label-main {
+    width: 800px;
+    max-width: 1000px;
+    animation: fade-show 0.6s;
+    margin: 8px;
+}
+
+.header-purchase {
+    text-align: center;
+    background-color: #17172e;
+    position: relative;
+    padding: 32px 16px;
+    color: white;
+    border-bottom: 1px solid rgb(119, 49, 119);
+    border-radius: 10px 10px 0 0;
+}
+
+.header-purchase i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.header-purchase i:hover {
+    background-color: rgb(204, 29, 29);
+}
+
+.main-purchase {
+    color: white;
+    padding: 16px;
+    background-color: #17172e;
+    border-radius: 0 0 10px 10px;
+}
+
+
+.main-purchase input {
+    padding: 8px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.main-purchase h2 {
+    margin: 16px;
+    text-align: center;
+}
+
+.main-purchase .purchase-button-label {
+    padding: 8px ;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 8px;
+    background-image: linear-gradient(to right, #8960aa, #50219e);
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+.main-purchase .purchase-button-label:hover {
+    animation: hover 0.3s;
+    color: black;
+}
+
+.main-purchase h6 {
+    display: inline-block;
+}
+
+/* FAQ */
+
+.faq-contain-item {
+    padding-bottom: 32px;
+}
+
+.faq-item {
+    background-color: rgba(41, 37, 59, 0.6);
+    padding: 0 16px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.faq-item p,
+.faq-item i {
+    line-height: 48px;
+    display: inline-block;
+}
+
+@keyframes hover {
+    from {
+        color: white;
+    }
+    to {
+        color: rgb(31, 31, 31);
+    }
+}
+
+@keyframes fade-show {
+    from {
+        transform: translateY(-200px);
+        opacity: 0.6;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-hide {
+    from {
+
+    }
+
+    to {
+
+    }
+}
